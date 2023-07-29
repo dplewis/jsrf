@@ -1,0 +1,15 @@
+__pycache__
+.gdbinit
+/build
+/jsrf-patched
+src/decl.h
+src/jsrf.xbe.def
+src/build_info.c
+src/thunks.c
+src/typechecks.c
+*.d
+*.lib
+*.obj
+*.exe
+*.pdb
+.DS_Store
