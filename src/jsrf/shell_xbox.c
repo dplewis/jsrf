@@ -1,7 +1,6 @@
 int main(int argc, const char **argv, const char **envp)
 {
-  // mainXapiStartup();
-  // TODO: Implement main_loop()
-  // XapiBootToDash(0);
+  shell_initialize(_malloc(0x8840));
+  main_loop(0);
   return 0;
 }
