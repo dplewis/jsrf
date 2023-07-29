@@ -286,7 +286,7 @@ def main():
 
 	logging.basicConfig(level=logging.INFO)
 	kb = KnowledgeBase.deserialize()
-
+	print(args)
 	if args.gen_header:
 		kb.build_header(args.gen_header)
 

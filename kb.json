@@ -2,30 +2,16 @@
   "md5": "f4e366bfdceee551a09f42219c90d84e",
   "objects": [
     {
-      "name": "shell_xbox.obj",
-      "functions": [
-        {
-          "decl": "int __cdecl main(int argc, const char **argv, const char **envp);",
-          "addr": "0x6f9e0"
-        },
-        {
-          "decl": "void shell_initialize(void *);",
-          "addr": "0x12c10"
-        },
-        {
-          "decl": "void * __cdecl _malloc(size_t __size);",
-          "addr": "0x17c953"
-        }
-      ]
-    },
-    {
       "name": "main.obj",
       "source": "main/main.c",
-      "data": [],
       "functions": [
         {
           "decl": "void FUN_00013a80(int param_1);",
           "addr": "0x13a80"
+        },
+        {
+          "decl": "void main_loop(int param_1);",
+          "addr": "0x13f80"
         },
         {
           "decl": "void FUN_00145ca6(int param_1);",
@@ -34,10 +20,23 @@
         {
           "decl": "void FUN_000659c0(void);",
           "addr": "0x659c0"
+        }
+      ]
+    },
+    {
+      "name": "shell_xbox.obj",
+      "functions": [
+        {
+          "decl": "void shell_initialize(void *);",
+          "addr": "0x12c10"
         },
         {
-          "decl": "void main_loop(int param_1);",
-          "addr": "0x13f80"
+          "decl": "int __cdecl main(int argc, const char **argv, const char **envp);",
+          "addr": "0x6f9e0"
+        },
+        {
+          "decl": "void * __cdecl _malloc(size_t __size);",
+          "addr": "0x17c953"
         }
       ]
     }
